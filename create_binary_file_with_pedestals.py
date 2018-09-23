@@ -12,7 +12,7 @@ output_path = sys.argv[2]
 reader = LSTEventSource(input_url=path_to_data)
 seeker = EventSeeker(reader)
 ev = seeker[0]
-number_modules = 1#ev.lst.tel[0].svc.num_modules
+number_modules = ev.lst.tel[0].svc.num_modules
 
 ped = DragonPedestal()
 PedList = []
